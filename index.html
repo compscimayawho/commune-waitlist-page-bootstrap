@@ -19,46 +19,124 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="../../../Desktop/Overflow/Bootstrap/breakpoints.css"> -->
 </head>
 
 <body>
   <!-- Navigation Bar
     The <nav> element is the semantically correct choice for navigation bars. 
-    Although using <div class="nav"> may function similarly, it lacks semantic correctness, so it's better to stick with <nav>.      
+    Although using <div class="nav"> may function similarly, it lacks semantic correctness, so it's better to stick with <nav>.
   -->
 
-  <nav class="navbar  navbar-expand-md py-0 fixed-top m-4" id=" main-navbar">
-    <div class="container ">
+  <nav class="navbar  navbar-expand-md py-0 m-4" id="main-navbar">
+    <!-- Container for better layout control -->
+    <div class="container">
+
+      <!-- Brand/logo section -->
       <a href="#" class="navbar-brand">
         <img src="./Assets/Logo.svg" alt="Commune logo">
       </a>
+
+      <!-- Hamburger menu button for small screens -->
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#nav-links" aria-label="toggle navigation" aria-controls="navbarNavAltMarkup"
         aria-expanded="false">
-        <img src="./Assets/Hamburger Menu.svg" alt="hamburger menu icon">
+        <img class="navbar-brand" src="./Assets/Hamburger Menu.svg" alt="hamburger menu icon">
       </button>
 
+      <!-- Navigation links container -->
       <div class="collapse navbar-collapse justify-content-end" id="nav-links">
+
+        <!-- Navigation links list -->
         <ul class="navbar-nav align-items-center">
+
+          <!-- Feature link -->
           <li class="nav-item px-2">
             <a href="#" class="nav-link fw-semibold">Features</a>
           </li>
+
+          <!-- Affiliates link -->
           <li class="nav-item px-2">
             <a href="#" class="nav-link fw-semibold">Affiliates</a>
           </li>
+
+          <!-- Pricing link -->
           <li class="nav-item px-2">
             <a href="#" class="nav-link fw-semibold">Pricing</a>
           </li>
+
+          <!-- Communities link -->
           <li class="nav-item px-2">
             <a href="#" class="nav-link fw-semibold">Communities</a>
           </li>
+
+          <!-- Join Waitlist button -->
           <li class="nav-item px-2">
-            <button class="btn btn-primary shadow-none">Join Waitlist</button>
+            <button class="btn btn-primary rounded shadow-none">Join Waitlist</button>
           </li>
+
         </ul>
+
       </div>
+
     </div>
   </nav>
+
+
+  <!-- Hero Section
+    While building a website, you will find yourself creating multiple sections, 
+    and as we've learned, every distinct section of a website must be in a div. (divs divs DIVS!) 
+    Hm..? I'm here talking about divs and yet I'm using <section>? 
+    Well, yes, the <section> element is used for semantic correctness. 
+    A <div> would have functioned the same way, but using <section> 
+    enhances the overall clarity of the HTML structure and communicates the thematic grouping 
+    of content more semantically.
+-->
+
+  <section class="hero-section m-4">
+    <!-- Container for grid system -->
+    <div class="container">
+
+      <!-- Row with two columns, using Bootstrap classes for grid layout -->
+      <div class="row row-cols-2 gx-2">
+
+        <!-- Left Column - 8 columns wide, containing text and form -->
+        <div class="col-8 d-flex flex-column justify-content-center">
+
+          <!-- Introduction paragraph with a link -->
+          <p class="mb-4 py-1 px-3 fw-light">
+            We are now allowing early-access for users.
+            <a href="#" class="fw-bolder">Learn more.</a>
+          </p>
+
+          <!-- Main heading -->
+          <h1>Build a highly engaged community with no effort.</h1>
+
+          <!-- Description paragraph -->
+          <p class="pe-5">
+            Commune offers the tools you need to build a highly engaged community with little to no
+            effort. Simply set up your Commune workspace, and manage everything from members to
+            content from one central dashboard.
+          </p>
+
+          <!-- Form for joining the waitlist -->
+          <form class="d-flex">
+            <input class="email-input me-2 rounded" type="email" placeholder="Enter your e-mail address">
+            <button class="btn btn-primary shadow-none rounded">Join Waitlist</button>
+          </form>
+
+        </div>
+
+        <!-- Right Column - 4 columns wide, containing an illustration -->
+        <div class="col-4 d-flex justify-content-center">
+          <img style="width: 20rem; height: 25rem;" src="./Assets/Illustration.png" alt="hero section illustration">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 
 
   <!-- Bootstrap JS -->
