@@ -110,3 +110,9 @@ body {
 footer h5 {
     color: var(--dim-gray);
 }
+
+@media (max-width: 768px) {
+    .hero-section .email-input {
+        width: 100%;
+    }
+}

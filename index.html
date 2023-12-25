@@ -19,6 +19,8 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Breakpoints CSS [optional: to help visualize the breakpoints] -->
   <!-- <link rel="stylesheet" href="../../../Desktop/Overflow/Bootstrap/breakpoints.css"> -->
 </head>
 
@@ -28,7 +30,7 @@
     Although using <div class="nav"> may function similarly, it lacks semantic correctness, so it's better to stick with <nav>.
   -->
 
-  <nav class="navbar  navbar-expand-md py-0 m-4" id="main-navbar">
+  <nav class="navbar  navbar-expand-lg py-0 m-4" id="main-navbar">
     <!-- Container for better layout control -->
     <div class="container">
 
@@ -101,26 +103,26 @@
       <div class="row row-cols-2 gx-2">
 
         <!-- Left Column - 8 columns wide, containing text and form -->
-        <div class="col-8 d-flex flex-column justify-content-center">
+        <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
 
           <!-- Introduction paragraph with a link -->
-          <p class="mb-4 py-1 px-3 fw-light">
+          <p class="mb-4 py-1 px-3 fw-light mx-auto mx-lg-0 text-center">
             We are now allowing early-access for users.
             <a href="#" class="fw-bolder">Learn more.</a>
           </p>
 
           <!-- Main heading -->
-          <h1>Build a highly engaged community with no effort.</h1>
+          <h1 class="text-center text-lg-start">Build a highly engaged community with no effort.</h1>
 
           <!-- Description paragraph -->
-          <p class="pe-5">
+          <p class="pe-0 pe-lg-5 text-center text-lg-start">
             Commune offers the tools you need to build a highly engaged community with little to no
             effort. Simply set up your Commune workspace, and manage everything from members to
             content from one central dashboard.
           </p>
 
           <!-- Form for joining the waitlist -->
-          <form class="d-flex">
+          <form class="d-flex flex-column flex-md-row gap-2 justify-content-center justify-content-lg-start">
             <input class="email-input me-2 rounded" type="email" placeholder="Enter your e-mail address">
             <button class="btn btn-primary shadow-none rounded">Join Waitlist</button>
           </form>
@@ -128,7 +130,7 @@
         </div>
 
         <!-- Right Column - 4 columns wide, containing an illustration -->
-        <div class="col-4 d-flex justify-content-center">
+        <div class="col-4 d-none d-lg-inline ">
           <img style="width: 20rem; height: 25rem;" src="./Assets/Illustration.png" alt="hero section illustration">
         </div>
 
