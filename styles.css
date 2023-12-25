@@ -106,3 +106,7 @@ body {
 .hero-section .email-input::placeholder {
     color: var(--silver);
 }
+
+footer h5 {
+    color: var(--dim-gray);
+}
